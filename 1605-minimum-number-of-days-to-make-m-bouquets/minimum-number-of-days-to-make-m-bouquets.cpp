@@ -1,32 +1,35 @@
 class Solution {
 public:
+bool possible(int day, vector<int>& bloomDay, int m, int k) {
+    int cnt = 0;
+    int totalbqtmade = 0;
+    int n = bloomDay.size(); // Avoid global variable dependency
+    for (int i = 0; i < n; i++) {
+        if (bloomDay[i] <= day) {
+            cnt++;
+        } else {
+            totalbqtmade += cnt / k;
+            cnt = 0;
+        }
+    }
+    totalbqtmade += cnt / k; // Include remaining bouquets
+    return totalbqtmade >= m;
+}
     int minDays(vector<int>& bloomDay, int m, int k) {
-        int s = 0 , e = 1e9;
-        int mid = s+(e-s)/2 , ans = -1;
-        while(s<=e){
-            int con = 0 , buk = 0;
-            for(int i=0;i<bloomDay.size();i++){
-                // if the day comes within mid day
-                if(bloomDay[i]<=mid){
-                    con++;
-                    // if it is a continuous day , check if a bouquet can be made
-                    if(con>=k){
-                    buk++;
-                    con = 0;
-                    }
-                }
-                else con = 0;
-            }
-
-            //if got required bouquets , store the day and search on left
-            if(buk>=m){
+        long long int n = bloomDay.size();
+        long long int data = 1LL * m * k; // Avoid overflow
+        if (data > n) return -1; // Not enough flowers for m bouquets
+        int s = *min_element(bloomDay.begin(), bloomDay.end());
+        int e = *max_element(bloomDay.begin(), bloomDay.end());
+        long long int ans = -1;
+        while (s <= e) {
+            int mid = s + (e - s) / 2;
+            if (possible(mid, bloomDay, m, k)) {
+                e = mid - 1;
                 ans = mid;
-                e = mid-1;
+            } else {
+                s = mid + 1;
             }
-            //otherwise search on right
-            else s = mid+1;
-            //update mid
-            mid = s+(e-s)/2;
         }
         return ans;
     }
