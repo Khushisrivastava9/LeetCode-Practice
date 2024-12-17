@@ -1,7 +1,7 @@
 class Solution {
 public:
 int beauty(vector<int> &v){
-    int maxi=-1,mini=INT_MAX;
+    int maxi=0,mini=INT_MAX;
     for(int i=0;i<26;i++){
         maxi=max(maxi,v[i]);
         if(v[i]>0){
