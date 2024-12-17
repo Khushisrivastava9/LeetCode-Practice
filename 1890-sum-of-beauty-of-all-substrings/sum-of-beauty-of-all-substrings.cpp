@@ -4,7 +4,7 @@ int beauty(vector<int> &v){
     int maxi=0,mini=INT_MAX;
     for(int i=0;i<26;i++){
         maxi=max(maxi,v[i]);
-        if(v[i]>0){
+        if(v[i]>0){//because 0 freq means it's not in substring only isiliye we are writing a condition.
             mini=min(mini,v[i]);
         }
     }
