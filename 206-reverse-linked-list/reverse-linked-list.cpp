@@ -10,17 +10,15 @@
  */
 class Solution {
 public:
-ListNode* recrevll(ListNode* temp,ListNode* forw){
-    if(temp==NULL) return forw;
-    ListNode* curr=temp->next;
-    temp->next=forw;
-    return recrevll(curr,temp);
-
+ListNode* revers(ListNode* temp,ListNode* pre){
+    if(temp==NULL) return pre;
+    ListNode* forw=temp->next;
+    temp->next=pre;
+    return revers(forw,temp);
 }
     ListNode* reverseList(ListNode* head) {
         ListNode* temp=head;
-        ListNode* forw=NULL;
-        return recrevll(temp,forw);
-        
+        ListNode* pre=NULL;
+        return revers(temp,pre);
     }
 };
