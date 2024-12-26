@@ -5,12 +5,11 @@ int m=1e9+7;
     int sumSubarrayMins(vector<int>& arr) {
         int n=arr.size();
         stack<int> s1,s2;
-        vector<int> leftsmallestarr(n,-1);//indices of the smaller elements to it's left
-        vector<int> rightsmallestarr(n,n);//indices of the smaller elements to it's right
+        vector<int> leftsmallestarr(n,-1);//indices of the smaller element to it's left
+        vector<int> rightsmallestarr(n,n);//indices of the smaller element to it's right
         for(int i=0;i<n;i++){
             while(!s1.empty() && arr[s1.top()]>arr[i]){
                 s1.pop();
-                
             }
             if(!s1.empty()){
                 leftsmallestarr[i]=s1.top();
