@@ -1,9 +1,9 @@
-# LeetCode Daily Practice - C++😊
+# LeetCode Daily Practice - C++ð
 
-## Overview✨:
+## Overviewâ¨:
 This repository is dedicated to documenting my daily practice of programming problems from LeetCode, with a focus on C++ solutions. By consistently tackling these challenges, I aim to enhance my problem-solving abilities, refine my algorithmic thinking, and deepen my expertise in C++ programming.
 
-## Benefits of Daily Practice🚀:
+## Benefits of Daily Practiceð:
 - **Skill Improvement**: Regular practice helps sharpen problem-solving skills and reinforces programming concepts.
 - **Algorithmic Thinking**: Solving diverse problems fosters the development of algorithmic thinking, enabling efficient problem-solving strategies.
 - **Language Proficiency**: Practicing in C++ enhances proficiency in the language, including syntax, standard library usage, and best practices.
@@ -12,7 +12,7 @@ This repository is dedicated to documenting my daily practice of programming pro
 
 ---
 
-Check out the repository and connect with me for help.😁
+Check out the repository and connect with me for help.ð
 <p align="left">
 <a href="https://www.linkedin.com/in/khushi-srivastava-ab029621b/"><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Linkedin.svg" alt="Linkedin Logo" width="32"></a>&nbsp;&nbsp;&nbsp;
 <a href="mailto:srivastavakhushi582@gmail.com"><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Gmail.svg" alt="Gmail logo" height="32"></a>&nbsp;&nbsp;&nbsp;
@@ -22,4 +22,28 @@ Happy learning and coding!
 
 ---
 
-If you find this repository useful, don't forget to star it! ⭐️
+If you find this repository useful, don't forget to star it! â­ï¸
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Khushisrivastava9/LeetCode-Practice/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Khushisrivastava9/LeetCode-Practice/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Queue
+|  |
+| ------- |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Khushisrivastava9/LeetCode-Practice/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Sliding Window
+|  |
+| ------- |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Khushisrivastava9/LeetCode-Practice/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+## Prefix Sum
+|  |
+| ------- |
+| [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/Khushisrivastava9/LeetCode-Practice/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
+<!---LeetCode Topics End-->
