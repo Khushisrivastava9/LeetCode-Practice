@@ -18,19 +18,17 @@ public:
             len++;
             temp=temp->next;
         }
-        if (n == len) {
-            ListNode* newHead = head->next;
-            delete head; 
-            return newHead;
+        if(len-n==0){
+            ListNode* newnode=head->next;
+            return newnode;
+            delete head;
         }
-        int torem=len-n;
-        temp=head;
-        for(int i=1;i<torem;i++){
-            temp=temp->next;
+        len=len-n;
+        ListNode* node=head;
+        while(--len && head->next!=NULL){
+            head=head->next;
         }
-        if(temp->next!=NULL){
-            temp->next=temp->next->next;
-        }
-        return head;
+        if(head!=NULL ) head->next=head->next->next;
+        return node;
     }
 };
