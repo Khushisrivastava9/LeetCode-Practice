@@ -13,38 +13,38 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         if(l1==NULL) return l2;
         if(l2==NULL) return l1;
-        ListNode* newll=new ListNode(0);
-        ListNode* temp=newll;
+        ListNode* temp=new ListNode(0);
+        ListNode* ans=temp;
         int carry=0;
         while(l1 && l2){
-            int value=l1->val+l2->val+carry;
-            int digit=value%10;
-            temp->next=new ListNode(digit);
-            carry=value/10;
-            temp=temp->next;   
+            int sum=l1->val+l2->val+carry;
+            carry=sum/10;
+            sum=sum%10;
+            ans->next=new ListNode(sum);
+            ans=ans->next;
             l1=l1->next;
-            l2=l2->next;         
+            l2=l2->next;
         }
         while(l1){
-            int value=l1->val+carry;
-            int digit=value%10;
-            temp->next=new ListNode(digit);
-            carry=value/10;
-            temp=temp->next;   
-            l1=l1->next;      
+            int sum=l1->val+carry;
+            carry=sum/10;
+            sum=sum%10;
+            ans->next=new ListNode(sum);
+            ans=ans->next;
+            l1=l1->next;
         }
         while(l2){
-            int value=l2->val+carry;
-            int digit=value%10;
-            temp->next=new ListNode(digit);
-            carry=value/10;
-            temp=temp->next;  
-            l2=l2->next;         
+            int sum=l2->val+carry;
+            carry=sum/10;
+            sum=sum%10;
+            ans->next=new ListNode(sum);
+            ans=ans->next;
+            l2=l2->next;
         }
         if(carry!=0){
-            temp->next=new ListNode(carry);
-            temp=temp->next;
+            ans->next=new ListNode(carry);
+            ans=ans->next;
         }
-        return newll->next;
+        return temp->next;
     }
 };
